@@ -14,7 +14,7 @@
         <img alt="Quasar logo" src="~assets/quasar-logo-inner.svg" />
       </q-avatar>
     </q-knob>
- 
+  
     <img
       alt="Quasar logo"
       src="~assets/quasar-logo-vertical.svg"
