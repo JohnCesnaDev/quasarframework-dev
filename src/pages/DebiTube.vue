@@ -1,13 +1,14 @@
 <template>
   <q-page class="flex flex-center">
   <div class="row items-start">
-    <div class="column q-gutter-sm">
+    <div class="col column q-gutter-sm">
       <q-input outlined v-model="text"></q-input>
       <q-btn @click="add" color="primary" label="Primary" />
       <q-btn color="primary" label="Primary" />
       <q-btn color="primary" label="Primary" />
     </div> 
-    <div>      
+    <div class="col">
+     <q-scroll-area style="height: 800px;width: 400px;">
         <q-tree class="col-12 col-sm-6"
           :nodes="simple"
           node-key="label"
@@ -15,16 +16,8 @@
           v-model:selected="selected"
           v-model:ticked="ticked"
         >
-        </q-tree>     
-    </div>
-    <div>
-      <q-scroll-area style="height: 200px; max-width: 300px;">
-        <div v-for="n in 100" :key="n" class="q-py-xs">
-          Lorem ipsum dolor sit amet, consectetur adipisicing
-          elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua.
-        </div>
-      </q-scroll-area>
+        </q-tree>
+      </q-scroll-area>     
     </div>
   </div>
   </q-page>

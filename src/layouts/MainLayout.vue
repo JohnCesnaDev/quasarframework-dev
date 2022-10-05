@@ -50,7 +50,7 @@ const linksList = [
     title: 'Github',
     caption: 'github.com/quasarframework',
     icon: 'code',
-    link: 'https://github.com/quasarframework',
+    link: '/TestBis',
   },
   {
     title: 'Discord Chat Channel',
